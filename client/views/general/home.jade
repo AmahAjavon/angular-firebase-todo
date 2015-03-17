@@ -15,10 +15,13 @@ h1 Home
         a(href='#/register')  Sign Up
       button.btn.btn-lg.btn-primary.btn-block(ng-disabled='!user.email || !user.password', type='button', ng-click='SignIn($event)') Sign In
       .form-group
-      button.btn.btn-lg.btn-info.btn-block(ng-click='fblogin()') Sign In With Facebook
+      a.btn-block.btn-social.btn-lg.btn-facebook(ng-click='fblogin()')
+        i.fa.fa-facebook Sign in with Facebook 
       .form-group
-      button.btn.btn-lg.btn-success.btn-block(ng-click='twilogin()') Sign In With Twitter
+      a.btn.btn-block.btn-social.btn-lg.btn-twitter(ng-click='twilogin()')
+        i.fa.fa-twitter Sign in with Twitter 
       .form-group
-      button.btn.btn-lg.btn-warning.btn-block(ng-click='goologin()') Sign In With Google
+      a.btn-block.btn-social.btn-lg.btn-google-plus(ng-click='goologin()')
+        i.fa.fa-google-plus Sign in with Google 
   .col-lg-3.col-md-2.col-xs-1  
   
