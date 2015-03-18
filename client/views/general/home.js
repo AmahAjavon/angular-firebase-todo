@@ -5,52 +5,41 @@
 
 angular.module('angular-prototype')
 
+
 .controller('HomeCtrl', ['$scope', function($scope) {
  var firebaseObj = new Firebase('https://ang-fb-todo.firebaseio.com');
 
 $scope.fblogin = function() {
-firebaseObj.authWithOAuthPopup("facebook", function(error, authData) {
+firebaseObj.authWithOAuthPopup('facebook', function(error, authData) {
   if (error) {
-    console.log("Login Failed!", error);
+    console.log('Login Failed!', error);
   } else {
-    console.log("Authenticated successfully with payload:", authData);
+    console.log('Authenticated successfully with payload:', authData);
   }
-})
-}
+});
+};
 
 $scope.twilogin = function() {
-  firebaseObj.authWithOAuthPopup("twitter", function(error, authData) {
+  firebaseObj.authWithOAuthPopup('twitter', function(error, authData) {
     if (error) {
-      console.log("Login Failed!", error);
+      console.log('Login Failed!', error);
     } else {
-      console.log("Authenticated successfully with payload:", authData);
+      console.log('Authenticated successfully with payload:', authData);
     }
-  })
-  }
+  });
+};
 
   $scope.goologin = function() {
-    firebaseObj.authWithOAuthPopup("google", function(error, authData) {
+    firebaseObj.authWithOAuthPopup('google', function(error, authData) {
       if (error) {
-        console.log("Login Failed!", error);
+        console.log('Login Failed!', error);
       } else {
-        console.log("Authenticated successfully with payload:", authData);
+        console.log('Authenticated successfully with payload:', authData);
       }
-    })
-    }
+    });
+  };
 
-}]);
-
-
-
-
-
-
-
-
-
-
-
-// angular.module('myApp.home', ['ngRoute','firebase'])
+}])
 //
 // .config(['$routeProvider', function($routeProvider) {
 //   $routeProvider.when('/home', {
@@ -81,7 +70,7 @@ $scope.twilogin = function() {
 //             //Failure callback
 //             console.log('Authentication failure');
 //         });
-// }
+// };
 // }])
 // .service('CommonProp', function() {
 //     var user = '';

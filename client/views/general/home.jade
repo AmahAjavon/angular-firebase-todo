@@ -11,17 +11,18 @@ h1 Home
         label Password
         input.form-control(type='password', name='password', ng-model='user.password', ng-minlength='3')
         p.help-block(ng-show='signinForm.password.$error.minlength') Min password length is 8 characters.
-      label.checkbox
-        a(href='#/register')  Sign Up
       button.btn.btn-lg.btn-primary.btn-block(ng-disabled='!user.email || !user.password', type='button', ng-click='SignIn($event)') Sign In
       .form-group
-      a.btn-block.btn-social.btn-lg.btn-facebook(ng-click='fblogin()')
-        i.fa.fa-facebook Sign in with Facebook 
+      a.btn.btn-lg.btn-facebook.btn-block(ng-click='fblogin()')
+        i.fa.fa-facebook &nbsp; Sign in with Facebook 
       .form-group
-      a.btn.btn-block.btn-social.btn-lg.btn-twitter(ng-click='twilogin()')
-        i.fa.fa-twitter Sign in with Twitter 
+      a.btn.btn-lg.btn-twitter.btn-block(ng-click='twilogin()')
+        i.fa.fa-twitter &nbsp; Sign in with Twitter 
       .form-group
-      a.btn-block.btn-social.btn-lg.btn-google-plus(ng-click='goologin()')
-        i.fa.fa-google-plus Sign in with Google 
+      a.btn.btn-lg.btn-google-plus.btn-block(ng-click='goologin()')
+        i.fa.fa-google-plus &nbsp; Sign in with Google
+      .form-group
+        label Not a member?
+          a(href='#/register')  Sign Up 
   .col-lg-3.col-md-2.col-xs-1  
   

@@ -9,5 +9,6 @@ angular.module('angular-prototype', ['ui.router', 'ngMessages', 'firebase'])
       .state('faq', {url:'/faq', templateUrl:'/views/general/faq.html'})
       .state('contact', {url:'/contact', templateUrl:'/views/general/contact.html'})
       .state('todos', {url:'/todos', templateUrl:'/views/todos/index.html', controller:'TodosCtrl'})
-      .state('register', {url:'/register', templateUrl:'/views/general/register.html'});
+      .state('register', {url:'/register', templateUrl:'/views/general/register.html', controller: 'RegisterCtrl'})
+      .state('signout', {url:'/signout', templateUrl:'/views/general/home.html'});
   }]);

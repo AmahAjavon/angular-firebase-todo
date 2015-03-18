@@ -13,16 +13,7 @@
 
 
 
-
-
-
-
-
-
-
-
-
-// angular.module('myApp.register', ['ngRoute','firebase'])
+// angular.module('angular-prototype.register', ['ngRoute','firebase'])
 //
 // .config(['$routeProvider', function($routeProvider) {
 //   $routeProvider.when('/register', {
